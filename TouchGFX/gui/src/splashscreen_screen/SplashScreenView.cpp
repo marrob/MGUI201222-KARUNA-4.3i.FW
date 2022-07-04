@@ -27,7 +27,7 @@ void SplashScreenView::tearDownScreen()
 void SplashScreenView::handleTickEvent() 
 {
     splashCnt++;
-    if (splashCnt < 500)
+    if (splashCnt < 10)
     {
         return;
     }
