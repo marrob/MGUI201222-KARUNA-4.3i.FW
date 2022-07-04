@@ -6,6 +6,6 @@
 
 static unsigned short SIM_WIDTH = 800;
 static unsigned short SIM_HEIGHT = 480;
-#define SIM_TITLE "MGUI201222-KARUNA-4.3.FW"
+#define SIM_TITLE "MGUI201222-KARUNA-4.3i.FW"
 
 #endif // SIMCONSTANTS_HPP
