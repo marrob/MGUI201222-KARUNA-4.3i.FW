@@ -32,8 +32,6 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "vt100.h"
-#include "common.h"
 #include "DisplayLight.h"
 #include "PowerLed.h"
 #include "GuiItf.h"
@@ -79,6 +77,8 @@ extern "C" {
 #define RS485_CMD_LENGTH      35
 #define RS485_ARG1_LENGTH     35
 #define RS485_ARG2_LENGTH     35
+
+#define USB_BUFFER_SIZE       40
 
 /*** YYMMDD-HHmmss ***/
 #define DEVICE_DT_STR_SIZE    20
