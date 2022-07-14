@@ -9,10 +9,14 @@ $srcPath = "..\MGUI201222-KARUNA-7i.FW"
 <#for TouchGFX Complier#>
 Copy-Item "$srcPath\gcc\Makefile" -Destination ".\gcc\Makefile"
 
-<#GIT#>
+<# Load #>
+Copy-Item "$srcPath\STM32CubeIDE\STM32F746NGHX_FLASH.ld" -Destination ".\STM32CubeIDE\STM32F746NGHX_FLASH.ld"
+Copy-Item "$srcPath\STM32CubeIDE\STM32F746NGHX_FLASH_RELEASE.ld" -Destination ".\STM32CubeIDE\STM32F746NGHX_FLASH_RELEASE.ld"
+
+<# Git #>
 Copy-Item "$srcPath\.gitignore" -Destination ".\.gitignore"
 
-<#User - Source#>
+<# User - Source #>
 Copy-Item "$srcPath\Core\Src\DisplayLight.c" -Destination ".\Core\Src\DisplayLight.c"  
 Copy-Item "$srcPath\Core\Src\eeprom.c" -Destination ".\Core\Src\eeprom.c"
 Copy-Item "$srcPath\Core\Src\freertos.c" -Destination ".\Core\Src\freertos.c"

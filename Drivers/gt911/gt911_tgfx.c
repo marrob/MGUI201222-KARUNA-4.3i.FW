@@ -95,7 +95,7 @@ uint8_t GT911_DetectTouch(I2C_HandleTypeDef *i2c)
         }
         GT911_WriteRegister(i2c, GT911_READ_COORD_ADDR, &clrarbyte, sizeof(clrarbyte));
     }
-    //HAL_Delay(10);
+    HAL_Delay(10);
     return(touchCount);
 }
 
