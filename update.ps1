@@ -22,11 +22,11 @@ Copy-Item "$srcPath\Core\Src\eeprom.c" -Destination ".\Core\Src\eeprom.c"
 Copy-Item "$srcPath\Core\Src\freertos.c" -Destination ".\Core\Src\freertos.c"
 Copy-Item "$srcPath\Core\Src\GuiItf.c" -Destination ".\Core\Src\GuiItf.c"
 Copy-Item "$srcPath\Core\Src\Log.c" -Destination ".\Core\Src\Log.c"
-<#Copy-Item "$srcPath\Core\Src\main.c" -Destination ".\Core\Src\main.c"#>
+Copy-Item "$srcPath\Core\Src\main.c" -Destination ".\Core\Src\main.c"
 Copy-Item "$srcPath\Core\Src\Periph.c" -Destination ".\Core\Src\Periph.c"
 Copy-Item "$srcPath\Core\Src\PowerLed.c" -Destination ".\Core\Src\PowerLed.c"
 Copy-Item "$srcPath\Core\Src\stm32f7xx_hal_msp.c" -Destination ".\Core\Src\stm32f7xx_hal_msp.c"
-Copy-Item "$srcPath\Core\Src\stm32f7xx_hal_timebase_tim.c" -Destination ".\Core\Src\stm32f7xx_hal_timebase_tim.c" ## OK
+Copy-Item "$srcPath\Core\Src\stm32f7xx_hal_timebase_tim.c" -Destination ".\Core\Src\stm32f7xx_hal_timebase_tim.c"
 Copy-Item "$srcPath\Core\Src\stm32f7xx_it.c" -Destination ".\Core\Src\stm32f7xx_it.c"
 Copy-Item "$srcPath\Core\Src\system_stm32f7xx.c" -Destination ".\Core\Src\system_stm32f7xx.c"
 <#User - Source#>
