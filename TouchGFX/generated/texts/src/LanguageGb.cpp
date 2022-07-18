@@ -7,189 +7,188 @@
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 
-// Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    569,  // T_TEXTID1: "<>"
-    1054, // T___SINGLEUSE_GOXD: "FORMAT"
-    569,  // T___SINGLEUSE_8EJL: "<>"
-    1080, // T___SINGLEUSE_7PO6: "DEPTH"
-    569,  // T___SINGLEUSE_J9QW: "<>"
-    1249, // T___SINGLEUSE_LPXD: "FREQ"
-    569,  // T___SINGLEUSE_YD6A: "<>"
-    809,  // T___SINGLEUSE_C7U0: "MCLK OUT: ON"
-    1010, // T___SINGLEUSE_SPLI: "Display"
-    961,  // T___SINGLEUSE_VB1R: "Settings\n"
-    569,  // T___SINGLEUSE_IO3K: "<>"
-    951,  // T___SINGLEUSE_WDG2: "Screen ON"
-    1154, // T___SINGLEUSE_XWX2: "Back"
-    697,  // T___SINGLEUSE_YPEX: "Device Settings"
-    99,   // T___SINGLEUSE_AGOP: "Enable all output at startup."
-    129,  // T___SINGLEUSE_9IH2: "Last output state at startup."
-    0,    // T___SINGLEUSE_4E2A: "Enable MasterClock Out on I2S output."
-    1154, // T___SINGLEUSE_GIYT: "Back"
-    680,  // T___SINGLEUSE_6WFO: "Display Settings"
-    910,  // T___SINGLEUSE_BX5F: "Screen OFF"
-    38,   // T___SINGLEUSE_L22C: "Set display auto sleep Time \n."
-    941,  // T___SINGLEUSE_7ZX9: "Off timer"
-    1068, // T___SINGLEUSE_HAQR: "1 min"
-    1074, // T___SINGLEUSE_KFWO: "5 min"
-    1026, // T___SINGLEUSE_7E5B: "10 min"
-    1033, // T___SINGLEUSE_J0VM: "30 min"
-    1047, // T___SINGLEUSE_KJC4: "60 min"
-    1002, // T___SINGLEUSE_AQQB: "120 min"
-    1278, // T___SINGLEUSE_4TRH: "128"
-    1040, // T___SINGLEUSE_ZC4G: "32 bit"
-    921,  // T___SINGLEUSE_3FKW: "358.2 kHz"
-    1286, // T___SINGLEUSE_G2P3: "DoP"
-    981,  // T___SINGLEUSE_ONW5: "<>%"
-    1274, // T___SINGLEUSE_8FBD: "100"
-    768,  // T___SINGLEUSE_FF38: "Brightness : "
-    1018, // T___SINGLEUSE_KZHU: "Unknown"
-    569,  // T___SINGLEUSE_0PRL: "<>"
-    347,  // T___SINGLEUSE_DLPA: "Clock Int-Ext source :  "
-    37,   // T___SINGLEUSE_QHRN: ""
-    569,  // T___SINGLEUSE_BMC7: "<>"
-    270,  // T___SINGLEUSE_AFXB: "Clock Temperature ranges "
-    159,  // T___SINGLEUSE_DSCM: "Clock heated temperature :  "
-    661,  // T___SINGLEUSE_MVNG: "0"
-    569,  // T___SINGLEUSE_KMGP: "<>"
-    1308, // T___SINGLEUSE_IX9B: "+"
-    1302, // T___SINGLEUSE_BWV6: "-\n"
-    628,  // T___SINGLEUSE_PVRW: "Show Debug screen"
-    877,  // T___SINGLEUSE_MHPH: "Debug menu"
-    661,  // T___SINGLEUSE_SX6S: "0"
-    569,  // T___SINGLEUSE_G3O6: "<>"
-    1149, // T___SINGLEUSE_MGJ6: "AI_3"
-    661,  // T___SINGLEUSE_B78P: "0"
-    569,  // T___SINGLEUSE_SP6U: "<>"
-    1144, // T___SINGLEUSE_VZ2D: "AI_2"
-    661,  // T___SINGLEUSE_82GT: "0"
-    569,  // T___SINGLEUSE_984M: "<>"
-    1139, // T___SINGLEUSE_RZ96: "AI_1"
-    661,  // T___SINGLEUSE_94Q1: "0"
-    569,  // T___SINGLEUSE_VX4C: "<>"
-    1134, // T___SINGLEUSE_OB5W: "AI_0"
-    1244, // T___SINGLEUSE_GK7P: "DO_7"
-    1239, // T___SINGLEUSE_IMDO: "DO_6"
-    1234, // T___SINGLEUSE_18PO: "DO_5"
-    1229, // T___SINGLEUSE_TA5O: "DO_4"
-    1224, // T___SINGLEUSE_QI35: "DO_3"
-    1219, // T___SINGLEUSE_48NN: "DO_2"
-    1214, // T___SINGLEUSE_PW3D: "DO_1"
-    1209, // T___SINGLEUSE_SBEA: "DO_0"
-    1116, // T___SINGLEUSE_M3H7: "DI_15"
-    1110, // T___SINGLEUSE_F24O: "DI_14"
-    1104, // T___SINGLEUSE_05DQ: "DI_13"
-    1098, // T___SINGLEUSE_Y37K: "DI_12"
-    1092, // T___SINGLEUSE_XZYJ: "DI_11"
-    1086, // T___SINGLEUSE_IV9O: "DI_10"
-    1204, // T___SINGLEUSE_HBYJ: "DI_9"
-    1199, // T___SINGLEUSE_JL2J: "DI_8"
-    1194, // T___SINGLEUSE_IZJG: "DI_7"
-    1189, // T___SINGLEUSE_VIJT: "DI_6"
-    1184, // T___SINGLEUSE_9PXR: "DI_5"
-    1179, // T___SINGLEUSE_ETIW: "DI_4"
-    1174, // T___SINGLEUSE_MH5A: "DI_3"
-    1169, // T___SINGLEUSE_X2HN: "DI_2"
-    1164, // T___SINGLEUSE_WVNP: "DI_1"
-    1209, // T___SINGLEUSE_39RD: "DO_0"
-    1159, // T___SINGLEUSE_MKUD: "DI_0"
-    1154, // T___SINGLEUSE_830Q: "Back"
-    217,  // T___SINGLEUSE_03EE: "Enable Screensaver [1 min]"
-    535,  // T___SINGLEUSE_KJEE: "DSD - 1bit - 2.4MHz "
-    663,  // T___SINGLEUSE_KBUK: "21.06.2022 20:35"
-    569,  // T___SINGLEUSE_58MF: "<>"
-    569,  // T___SINGLEUSE_ZBCN: "<>"
-    713,  // T___SINGLEUSE_JVEY: "Karuna Atlantis"
-    866,  // T___SINGLEUSE_PRBY: "CORE AUDIO"
-    661,  // T___SINGLEUSE_6BR6: "0"
-    569,  // T___SINGLEUSE_9QB9: "<>"
-    188,  // T___SINGLEUSE_KPYH: "Karuna Uart Error counter : "
-    661,  // T___SINGLEUSE_WMAQ: "0"
-    569,  // T___SINGLEUSE_3TGM: "<>"
-    244,  // T___SINGLEUSE_W2OM: "Bus Uart Error counter : "
-    661,  // T___SINGLEUSE_Z9BW: "0"
-    569,  // T___SINGLEUSE_KTHD: "<>"
-    610,  // T___SINGLEUSE_3GMJ: "Bootup counter : "
-    591,  // T___SINGLEUSE_T381: "!!! Soft Reset !!!"
-    491,  // T___SINGLEUSE_GKKS: "!!! Fatcory Reset !!!"
-    569,  // T___SINGLEUSE_AT65: "<>"
-    296,  // T___SINGLEUSE_G1LA: "Karuna firmware version :"
-    569,  // T___SINGLEUSE_Q6L7: "<>"
-    445,  // T___SINGLEUSE_1OG4: "GUI firmware version :"
-    1290, // T___SINGLEUSE_C8R6: "GUI"
-    971,  // T___SINGLEUSE_YROX: "TRI Clock"
-    1061, // T___SINGLEUSE_0LDD: "Karuna"
-    1018, // T___SINGLEUSE_VBNA: "Unknown"
-    569,  // T___SINGLEUSE_9LCW: "<>"
-    322,  // T___SINGLEUSE_3OH6: "22.5792 MHz PLL Lock :  "
-    1018, // T___SINGLEUSE_LWCL: "Unknown"
-    569,  // T___SINGLEUSE_8T1B: "<>"
-    421,  // T___SINGLEUSE_FST6: "24.5760 MHz PLL Lock : "
-    1018, // T___SINGLEUSE_S5AG: "Unknown"
-    569,  // T___SINGLEUSE_8J5N: "<>"
-    513,  // T___SINGLEUSE_PNNL: "24.000 MHz PLL Lock :"
-    661,  // T___SINGLEUSE_1E1R: "0"
-    861,  // T___SINGLEUSE_Q4R5: "<> ?C"
-    69,   // T___SINGLEUSE_AR9N: "Clock OCXO main temperature :"
-    661,  // T___SINGLEUSE_IA01: "0"
-    569,  // T___SINGLEUSE_27WL: "<>"
-    372,  // T___SINGLEUSE_QYPN: "Karuna uptime counter : "
-    1122, // T___SINGLEUSE_Y806: "ERROR"
-    1264, // T___SINGLEUSE_G4CD: "WARN"
-    1259, // T___SINGLEUSE_LTA0: "INFO"
-    397,  // T___SINGLEUSE_HXDW: "23.08.2022 - 20.08.2022"
-    729,  // T___SINGLEUSE_ZK75: "Date : <>"
-    37,   // T___SINGLEUSE_9NVL: ""
-    569,  // T___SINGLEUSE_GCT7: "<>"
-    931,  // T___SINGLEUSE_C0B1: "Next Page"
-    888,  // T___SINGLEUSE_QJTD: "Device Log"
-    1154, // T___SINGLEUSE_FDYF: "Back"
-    899,  // T___SINGLEUSE_BPY3: "Prev. Page"
-    657,  // T___SINGLEUSE_USF5: "00:00"
-    556,  // T___SINGLEUSE_SC3P: "Time To Off  <>"
-    646,  // T___SINGLEUSE_GJVC: "01.01.2022 00:00"
-    569,  // T___SINGLEUSE_HGJP: "<>"
-    835,  // T___SINGLEUSE_LJNE: "Service menu"
-    571,  // T___SINGLEUSE_U9MK: "06.06.2022 09:50:36"
-    569,  // T___SINGLEUSE_PJKD: "<>"
-    993,  // T___SINGLEUSE_HFD2: "and time"
-    796,  // T___SINGLEUSE_3USL: "Current date"
-    975,  // T___SINGLEUSE_23R7: "Clock"
-    738,  // T___SINGLEUSE_37JV: "Set Clock time"
-    753,  // T___SINGLEUSE_AYJC: "Set clock time"
-    1298, // T___SINGLEUSE_9D4M: "Sec"
-    1294, // T___SINGLEUSE_6A9X: "Min"
-    1254, // T___SINGLEUSE_NP4N: "Hour"
-    1269, // T___SINGLEUSE_9I9C: "Year"
-    1128, // T___SINGLEUSE_9VLR: "Month"
-    1282, // T___SINGLEUSE_NJLN: "Day"
-    782,  // T___SINGLEUSE_DUXL: "Time Settings"
-    1154, // T___SINGLEUSE_IKXG: "Back"
-    1089, // T___SINGLEUSE_X53I: "10"
-    1089, // T___SINGLEUSE_QH9M: "10"
-    569,  // T___SINGLEUSE_T1YD: "<>"
-    569,  // T___SINGLEUSE_FGW4: "<>"
-    1061, // T___SINGLEUSE_VP13: "Karuna"
-    661,  // T___SINGLEUSE_PMC0: "0"
-    468,  // T___SINGLEUSE_H4DE: "The PIN is not correct"
-    1154, // T___SINGLEUSE_CJEC: "Back"
-    1305, // T___SINGLEUSE_LOWN: "OK"
-    569,  // T___SINGLEUSE_G81B: "<>"
-    848,  // T___SINGLEUSE_YQCS: "the PIN code"
-    822,  // T___SINGLEUSE_Q977: "Please enter"
-    661,  // T___SINGLEUSE_L5OG: "0"
-    1108, // T___SINGLEUSE_7J4G: "3"
-    419,  // T___SINGLEUSE_O6OI: "2"
-    1096, // T___SINGLEUSE_9F30: "1"
-    589,  // T___SINGLEUSE_DPOV: "6"
-    678,  // T___SINGLEUSE_8WBT: "5"
-    1114, // T___SINGLEUSE_X6QP: "4"
-    1207, // T___SINGLEUSE_70WT: "9"
-    1202, // T___SINGLEUSE_XAZG: "8"
-    1197, // T___SINGLEUSE_3CBB: "7"
-    835,  // T___SINGLEUSE_YTJC: "Service menu"
-    984,  // T___SINGLEUSE_IGHU: "Show Log"
-    1154  // T___SINGLEUSE_HW10: "Back"
+    569, // T_TextId1
+    1054, // T___SingleUse_GOXD
+    569, // T___SingleUse_8EJL
+    1080, // T___SingleUse_7PO6
+    569, // T___SingleUse_J9QW
+    1249, // T___SingleUse_LPXD
+    569, // T___SingleUse_YD6A
+    809, // T___SingleUse_C7U0
+    1010, // T___SingleUse_SPLI
+    961, // T___SingleUse_VB1R
+    569, // T___SingleUse_IO3K
+    951, // T___SingleUse_WDG2
+    1154, // T___SingleUse_XWX2
+    697, // T___SingleUse_YPEX
+    99, // T___SingleUse_AGOP
+    129, // T___SingleUse_9IH2
+    0, // T___SingleUse_4E2A
+    1154, // T___SingleUse_GIYT
+    680, // T___SingleUse_6WFO
+    910, // T___SingleUse_BX5F
+    38, // T___SingleUse_L22C
+    941, // T___SingleUse_7ZX9
+    1068, // T___SingleUse_HAQR
+    1074, // T___SingleUse_KFWO
+    1026, // T___SingleUse_7E5B
+    1033, // T___SingleUse_J0VM
+    1047, // T___SingleUse_KJC4
+    1002, // T___SingleUse_AQQB
+    1278, // T___SingleUse_4TRH
+    1040, // T___SingleUse_ZC4G
+    921, // T___SingleUse_3FKW
+    1286, // T___SingleUse_G2P3
+    981, // T___SingleUse_ONW5
+    1274, // T___SingleUse_8FBD
+    768, // T___SingleUse_FF38
+    1018, // T___SingleUse_KZHU
+    569, // T___SingleUse_0PRL
+    347, // T___SingleUse_DLPA
+    37, // T___SingleUse_QHRN
+    569, // T___SingleUse_BMC7
+    270, // T___SingleUse_AFXB
+    159, // T___SingleUse_DSCM
+    661, // T___SingleUse_MVNG
+    569, // T___SingleUse_KMGP
+    1308, // T___SingleUse_IX9B
+    1302, // T___SingleUse_BWV6
+    628, // T___SingleUse_PVRW
+    877, // T___SingleUse_MHPH
+    661, // T___SingleUse_SX6S
+    569, // T___SingleUse_G3O6
+    1149, // T___SingleUse_MGJ6
+    661, // T___SingleUse_B78P
+    569, // T___SingleUse_SP6U
+    1144, // T___SingleUse_VZ2D
+    661, // T___SingleUse_82GT
+    569, // T___SingleUse_984M
+    1139, // T___SingleUse_RZ96
+    661, // T___SingleUse_94Q1
+    569, // T___SingleUse_VX4C
+    1134, // T___SingleUse_OB5W
+    1244, // T___SingleUse_GK7P
+    1239, // T___SingleUse_IMDO
+    1234, // T___SingleUse_18PO
+    1229, // T___SingleUse_TA5O
+    1224, // T___SingleUse_QI35
+    1219, // T___SingleUse_48NN
+    1214, // T___SingleUse_PW3D
+    1209, // T___SingleUse_SBEA
+    1116, // T___SingleUse_M3H7
+    1110, // T___SingleUse_F24O
+    1104, // T___SingleUse_05DQ
+    1098, // T___SingleUse_Y37K
+    1092, // T___SingleUse_XZYJ
+    1086, // T___SingleUse_IV9O
+    1204, // T___SingleUse_HBYJ
+    1199, // T___SingleUse_JL2J
+    1194, // T___SingleUse_IZJG
+    1189, // T___SingleUse_VIJT
+    1184, // T___SingleUse_9PXR
+    1179, // T___SingleUse_ETIW
+    1174, // T___SingleUse_MH5A
+    1169, // T___SingleUse_X2HN
+    1164, // T___SingleUse_WVNP
+    1209, // T___SingleUse_39RD
+    1159, // T___SingleUse_MKUD
+    1154, // T___SingleUse_830Q
+    217, // T___SingleUse_03EE
+    535, // T___SingleUse_KJEE
+    663, // T___SingleUse_KBUK
+    569, // T___SingleUse_58MF
+    569, // T___SingleUse_ZBCN
+    713, // T___SingleUse_JVEY
+    866, // T___SingleUse_PRBY
+    661, // T___SingleUse_6BR6
+    569, // T___SingleUse_9QB9
+    188, // T___SingleUse_KPYH
+    661, // T___SingleUse_WMAQ
+    569, // T___SingleUse_3TGM
+    244, // T___SingleUse_W2OM
+    661, // T___SingleUse_Z9BW
+    569, // T___SingleUse_KTHD
+    610, // T___SingleUse_3GMJ
+    591, // T___SingleUse_T381
+    491, // T___SingleUse_GKKS
+    569, // T___SingleUse_AT65
+    296, // T___SingleUse_G1LA
+    569, // T___SingleUse_Q6L7
+    445, // T___SingleUse_1OG4
+    1290, // T___SingleUse_C8R6
+    971, // T___SingleUse_YROX
+    1061, // T___SingleUse_0LDD
+    1018, // T___SingleUse_VBNA
+    569, // T___SingleUse_9LCW
+    322, // T___SingleUse_3OH6
+    1018, // T___SingleUse_LWCL
+    569, // T___SingleUse_8T1B
+    421, // T___SingleUse_FST6
+    1018, // T___SingleUse_S5AG
+    569, // T___SingleUse_8J5N
+    513, // T___SingleUse_PNNL
+    661, // T___SingleUse_1E1R
+    861, // T___SingleUse_Q4R5
+    69, // T___SingleUse_AR9N
+    661, // T___SingleUse_IA01
+    569, // T___SingleUse_27WL
+    372, // T___SingleUse_QYPN
+    1122, // T___SingleUse_Y806
+    1264, // T___SingleUse_G4CD
+    1259, // T___SingleUse_LTA0
+    397, // T___SingleUse_HXDW
+    729, // T___SingleUse_ZK75
+    37, // T___SingleUse_9NVL
+    569, // T___SingleUse_GCT7
+    931, // T___SingleUse_C0B1
+    888, // T___SingleUse_QJTD
+    1154, // T___SingleUse_FDYF
+    899, // T___SingleUse_BPY3
+    657, // T___SingleUse_USF5
+    556, // T___SingleUse_SC3P
+    646, // T___SingleUse_GJVC
+    569, // T___SingleUse_HGJP
+    835, // T___SingleUse_LJNE
+    571, // T___SingleUse_U9MK
+    569, // T___SingleUse_PJKD
+    993, // T___SingleUse_HFD2
+    796, // T___SingleUse_3USL
+    975, // T___SingleUse_23R7
+    738, // T___SingleUse_37JV
+    753, // T___SingleUse_AYJC
+    1298, // T___SingleUse_9D4M
+    1294, // T___SingleUse_6A9X
+    1254, // T___SingleUse_NP4N
+    1269, // T___SingleUse_9I9C
+    1128, // T___SingleUse_9VLR
+    1282, // T___SingleUse_NJLN
+    782, // T___SingleUse_DUXL
+    1154, // T___SingleUse_IKXG
+    1089, // T___SingleUse_X53I
+    1089, // T___SingleUse_QH9M
+    569, // T___SingleUse_T1YD
+    569, // T___SingleUse_FGW4
+    1061, // T___SingleUse_VP13
+    661, // T___SingleUse_PMC0
+    468, // T___SingleUse_H4DE
+    1154, // T___SingleUse_CJEC
+    1305, // T___SingleUse_LOWN
+    569, // T___SingleUse_G81B
+    848, // T___SingleUse_YQCS
+    822, // T___SingleUse_Q977
+    661, // T___SingleUse_L5OG
+    1108, // T___SingleUse_7J4G
+    419, // T___SingleUse_O6OI
+    1096, // T___SingleUse_9F30
+    589, // T___SingleUse_DPOV
+    678, // T___SingleUse_8WBT
+    1114, // T___SingleUse_X6QP
+    1207, // T___SingleUse_70WT
+    1202, // T___SingleUse_XAZG
+    1197, // T___SingleUse_3CBB
+    835, // T___SingleUse_YTJC
+    984, // T___SingleUse_IGHU
+    1154 // T___SingleUse_HW10
 };

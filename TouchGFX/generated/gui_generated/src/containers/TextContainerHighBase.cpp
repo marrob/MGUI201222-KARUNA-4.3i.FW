@@ -19,11 +19,6 @@ TextContainerHighBase::TextContainerHighBase()
     add(text);
 }
 
-TextContainerHighBase::~TextContainerHighBase()
-{
-
-}
-
 void TextContainerHighBase::initialize()
 {
 

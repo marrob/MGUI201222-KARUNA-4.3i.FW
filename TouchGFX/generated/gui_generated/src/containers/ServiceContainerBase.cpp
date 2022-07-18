@@ -295,11 +295,6 @@ ServiceContainerBase::ServiceContainerBase() :
     add(lblClockCurrent_Intext);
 }
 
-ServiceContainerBase::~ServiceContainerBase()
-{
-
-}
-
 void ServiceContainerBase::initialize()
 {
     OffsetUpDownContainer.initialize();
