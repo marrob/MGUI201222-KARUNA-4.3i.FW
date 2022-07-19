@@ -3,8 +3,8 @@
 /*********************************************************************************/
 #include <gui_generated/clockscreen_screen/ClockScreenViewBase.hpp>
 #include <touchgfx/Color.hpp>
-#include <texts/TextKeysAndLanguages.hpp>
 #include <BitmapDatabase.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 
 
@@ -27,18 +27,20 @@ ClockScreenViewBase::ClockScreenViewBase() :
     btnSetupClock.setText(TypedText(T___SINGLEUSE_AYJC));
     btnSetupClock.setTextPosition(-20, 20, 394, 72);
     btnSetupClock.setTextColors(touchgfx::Color::getColorFromRGB(150, 118, 73), touchgfx::Color::getColorFromRGB(64, 64, 64));
-    btnSetupClock.setPosition(404, 404, 394, 72);
+    btnSetupClock.setBitmaps(Bitmap(BITMAP_CLOCK_ID), Bitmap(BITMAP_CLOCK_ID));
+    btnSetupClock.setBitmapXY(20, 5);
+    btnSetupClock.setPosition(402, 404, 394, 72);
     btnSetupClock.setAction(flexButtonCallback);
 
     btnBack.setBoxWithBorderPosition(0, 0, 394, 72);
     btnBack.setBorderSize(1);
     btnBack.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 0, 0), touchgfx::Color::getColorFromRGB(32, 32, 32), touchgfx::Color::getColorFromRGB(100, 100, 100), touchgfx::Color::getColorFromRGB(100, 100, 100));
     btnBack.setBitmaps(Bitmap(BITMAP_GOBACK_ID), Bitmap(BITMAP_GOBACK_ID));
-    btnBack.setBitmapXY(20, 5);
+    btnBack.setBitmapXY(20, -5);
     btnBack.setText(TypedText(T___SINGLEUSE_IKXG));
-    btnBack.setTextPosition(-14, 20, 394, 72);
+    btnBack.setTextPosition(-20, 20, 394, 72);
     btnBack.setTextColors(touchgfx::Color::getColorFromRGB(150, 118, 73), touchgfx::Color::getColorFromRGB(64, 64, 64));
-    btnBack.setPosition(5, 404, 394, 72);
+    btnBack.setPosition(4, 404, 394, 72);
     btnBack.setAction(flexButtonCallback);
 
     boxWithBorder1.setPosition(4, 80, 792, 320);

@@ -160,7 +160,7 @@ MainViewBase::MainViewBase() :
     btnSettings.setBorderSize(1);
     btnSettings.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 0, 0), touchgfx::Color::getColorFromRGB(32, 32, 32), touchgfx::Color::getColorFromRGB(100, 100, 100), touchgfx::Color::getColorFromRGB(100, 100, 100));
     btnSettings.setBitmaps(Bitmap(BITMAP_SETTINGS_ID), Bitmap(BITMAP_SETTINGS_ID));
-    btnSettings.setBitmapXY(15, 5);
+    btnSettings.setBitmapXY(20, 5);
     btnSettings.setText(TypedText(T___SINGLEUSE_VB1R));
     btnSettings.setTextPosition(-20, 20, 394, 72);
     btnSettings.setTextColors(touchgfx::Color::getColorFromRGB(150, 118, 73), touchgfx::Color::getColorFromRGB(64, 64, 64));
@@ -178,7 +178,7 @@ MainViewBase::MainViewBase() :
     btnDisplay.setPosition(402, 404, 394, 72);
     btnDisplay.setAction(flexButtonCallback);
 
-    lblDateTime.setPosition(575, 359, 219, 28);
+    lblDateTime.setPosition(545, 359, 219, 28);
     lblDateTime.setColor(touchgfx::Color::getColorFromRGB(100, 100, 100));
     lblDateTime.setLinespacing(0);
     Unicode::snprintf(lblDateTimeBuffer, LBLDATETIME_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_GJVC).getText());

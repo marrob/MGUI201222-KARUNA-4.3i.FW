@@ -864,6 +864,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_CLOCKINT_80x80_i.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_Clock.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Clock.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_DISPLAY.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_DISPLAY.cpp</locationURI>
@@ -887,6 +892,11 @@
 			<name>Application/User/generated/image_HDMI_80x80_s.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_HDMI_80x80_s.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_Log.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_Log.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_OFFCORE_72x72.cpp</name>

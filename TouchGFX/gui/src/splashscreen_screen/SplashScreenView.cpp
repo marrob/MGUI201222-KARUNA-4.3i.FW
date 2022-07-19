@@ -2,11 +2,14 @@
 
 int splashCnt;
 int mSplashCount;
-int defWidth = 920;
+
+int defWidth = 720;
 
 SplashScreenView::SplashScreenView()
 {
-
+#ifdef KARUNA_7i
+    defWidth = 920;
+#endif
 }
 
 void SplashScreenView::setupScreen()

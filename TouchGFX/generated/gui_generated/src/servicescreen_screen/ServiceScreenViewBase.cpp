@@ -24,7 +24,7 @@ ServiceScreenViewBase::ServiceScreenViewBase() :
     btnBack.setBorderSize(1);
     btnBack.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 0, 0), touchgfx::Color::getColorFromRGB(32, 32, 32), touchgfx::Color::getColorFromRGB(100, 100, 100), touchgfx::Color::getColorFromRGB(100, 100, 100));
     btnBack.setBitmaps(Bitmap(BITMAP_GOBACK_ID), Bitmap(BITMAP_GOBACK_ID));
-    btnBack.setBitmapXY(20, 5);
+    btnBack.setBitmapXY(20, -5);
     btnBack.setText(TypedText(T___SINGLEUSE_HW10));
     btnBack.setTextPosition(-20, 20, 394, 72);
     btnBack.setTextColors(touchgfx::Color::getColorFromRGB(150, 118, 73), touchgfx::Color::getColorFromRGB(64, 64, 64));
@@ -37,6 +37,8 @@ ServiceScreenViewBase::ServiceScreenViewBase() :
     btnLog.setText(TypedText(T___SINGLEUSE_IGHU));
     btnLog.setTextPosition(-20, 20, 394, 72);
     btnLog.setTextColors(touchgfx::Color::getColorFromRGB(150, 118, 73), touchgfx::Color::getColorFromRGB(64, 64, 64));
+    btnLog.setBitmaps(Bitmap(BITMAP_LOG_ID), Bitmap(BITMAP_LOG_ID));
+    btnLog.setBitmapXY(20, 5);
     btnLog.setPosition(402, 404, 394, 72);
     btnLog.setAction(flexButtonCallback);
 

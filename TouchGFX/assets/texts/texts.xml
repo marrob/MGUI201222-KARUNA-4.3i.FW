@@ -45,7 +45,7 @@
         <Translation Language="GB">Back</Translation>
       </Text>
       <Text Id="__SingleUse_YPEX" Alignment="Center" TypographyId="Value">
-        <Translation Language="GB">Device Settings</Translation>
+        <Translation Language="GB">Devices</Translation>
       </Text>
       <Text Id="__SingleUse_AGOP" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Enable all output at startup.</Translation>
@@ -60,7 +60,7 @@
         <Translation Language="GB">Back</Translation>
       </Text>
       <Text Id="__SingleUse_6WFO" Alignment="Center" TypographyId="Value">
-        <Translation Language="GB">Display Settings</Translation>
+        <Translation Language="GB">Display</Translation>
       </Text>
       <Text Id="__SingleUse_BX5F" Alignment="Right" TypographyId="Default">
         <Translation Language="GB">Screen OFF</Translation>
@@ -146,10 +146,10 @@
         <Translation Language="GB">-&#10;</Translation>
       </Text>
       <Text Id="__SingleUse_PVRW" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Show Debug screen</Translation>
+        <Translation Language="GB">Debug screen</Translation>
       </Text>
       <Text Id="__SingleUse_MHPH" Alignment="Center" TypographyId="Value">
-        <Translation Language="GB">Debug menu</Translation>
+        <Translation Language="GB">Debug</Translation>
       </Text>
       <Text Id="__SingleUse_SX6S" Alignment="Left" TypographyId="Settings">
         <Translation Language="GB">0</Translation>
@@ -293,7 +293,7 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_KPYH" Alignment="Left" TypographyId="Settings">
-        <Translation Language="GB">Karuna Uart Error counter : </Translation>
+        <Translation Language="GB">Uart Error counter : </Translation>
       </Text>
       <Text Id="__SingleUse_WMAQ" Alignment="Left" TypographyId="Settings">
         <Translation Language="GB">0</Translation>
@@ -314,22 +314,22 @@
         <Translation Language="GB">Bootup counter : </Translation>
       </Text>
       <Text Id="__SingleUse_T381" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">!!! Soft Reset !!!</Translation>
+        <Translation Language="GB">Soft reset</Translation>
       </Text>
       <Text Id="__SingleUse_GKKS" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">!!! Fatcory Reset !!!</Translation>
+        <Translation Language="GB">Fatcory default</Translation>
       </Text>
       <Text Id="__SingleUse_AT65" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_G1LA" Alignment="Left" TypographyId="Settings">
-        <Translation Language="GB">Karuna firmware version :</Translation>
+        <Translation Language="GB">Firmware version :</Translation>
       </Text>
       <Text Id="__SingleUse_Q6L7" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_1OG4" Alignment="Left" TypographyId="Settings">
-        <Translation Language="GB">GUI firmware version :</Translation>
+        <Translation Language="GB">Firmware version :</Translation>
       </Text>
       <Text Id="__SingleUse_C8R6" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">GUI</Translation>
@@ -374,7 +374,7 @@
         <Translation Language="GB">&lt;value&gt; °C</Translation>
       </Text>
       <Text Id="__SingleUse_AR9N" Alignment="Left" TypographyId="Settings">
-        <Translation Language="GB">Clock OCXO main temperature :</Translation>
+        <Translation Language="GB">OCXO main temperature :</Translation>
       </Text>
       <Text Id="__SingleUse_IA01" Alignment="Left" TypographyId="Settings">
         <Translation Language="GB">0</Translation>
@@ -383,7 +383,7 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_QYPN" Alignment="Left" TypographyId="Settings">
-        <Translation Language="GB">Karuna uptime counter : </Translation>
+        <Translation Language="GB">Uptime counter : </Translation>
       </Text>
       <Text Id="__SingleUse_Y806" Alignment="Left" TypographyId="Settings">
         <Translation Language="GB">ERROR</Translation>
@@ -409,9 +409,6 @@
       <Text Id="__SingleUse_C0B1" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Next Page</Translation>
       </Text>
-      <Text Id="__SingleUse_QJTD" Alignment="Center" TypographyId="Value">
-        <Translation Language="GB">Device Log</Translation>
-      </Text>
       <Text Id="__SingleUse_FDYF" Alignment="Right" TypographyId="Default">
         <Translation Language="GB">Back</Translation>
       </Text>
@@ -431,7 +428,7 @@
         <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="__SingleUse_LJNE" Alignment="Center" TypographyId="Value">
-        <Translation Language="GB">Service menu</Translation>
+        <Translation Language="GB">Service</Translation>
       </Text>
       <Text Id="__SingleUse_U9MK" Alignment="Left" TypographyId="SWText">
         <Translation Language="GB">06.06.2022 09:50:36</Translation>
@@ -473,7 +470,7 @@
         <Translation Language="GB">Day</Translation>
       </Text>
       <Text Id="__SingleUse_DUXL" Alignment="Center" TypographyId="Value">
-        <Translation Language="GB">Time Settings</Translation>
+        <Translation Language="GB">Clock</Translation>
       </Text>
       <Text Id="__SingleUse_IKXG" Alignment="Right" TypographyId="Default">
         <Translation Language="GB">Back</Translation>
@@ -545,7 +542,7 @@
         <Translation Language="GB">7</Translation>
       </Text>
       <Text Id="__SingleUse_YTJC" Alignment="Right" TypographyId="Default">
-        <Translation Language="GB">Service menu</Translation>
+        <Translation Language="GB">Service</Translation>
       </Text>
       <Text Id="__SingleUse_IGHU" Alignment="Right" TypographyId="Default">
         <Translation Language="GB">Show Log</Translation>

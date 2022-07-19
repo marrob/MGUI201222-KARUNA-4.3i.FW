@@ -37,7 +37,7 @@ SettingsScreenViewBase::SettingsScreenViewBase() :
     btnBack.setBorderSize(1);
     btnBack.setBoxWithBorderColors(touchgfx::Color::getColorFromRGB(0, 0, 0), touchgfx::Color::getColorFromRGB(32, 32, 32), touchgfx::Color::getColorFromRGB(100, 100, 100), touchgfx::Color::getColorFromRGB(100, 100, 100));
     btnBack.setBitmaps(Bitmap(BITMAP_GOBACK_ID), Bitmap(BITMAP_GOBACK_ID));
-    btnBack.setBitmapXY(20, 5);
+    btnBack.setBitmapXY(20, -5);
     btnBack.setText(TypedText(T___SINGLEUSE_XWX2));
     btnBack.setTextPosition(-20, 20, 394, 72);
     btnBack.setTextColors(touchgfx::Color::getColorFromRGB(150, 118, 73), touchgfx::Color::getColorFromRGB(64, 64, 64));

@@ -520,7 +520,7 @@
               },
               {
                 "Type": "ImageButtonStyle",
-                "X": 15,
+                "X": 20,
                 "Y": 5,
                 "ImageReleased": "Settings.png",
                 "ImagePressed": "Settings.png"
@@ -611,7 +611,7 @@
           {
             "Type": "TextArea",
             "Name": "lblDateTime",
-            "X": 575,
+            "X": 545,
             "Y": 359,
             "Width": 219,
             "Height": 28,
@@ -993,7 +993,7 @@
               {
                 "Type": "ImageButtonStyle",
                 "X": 20,
-                "Y": 5,
+                "Y": -5,
                 "ImageReleased": "GoBack.png",
                 "ImagePressed": "GoBack.png"
               },
@@ -1423,7 +1423,7 @@
               {
                 "Type": "ImageButtonStyle",
                 "X": 20,
-                "Y": 5,
+                "Y": -5,
                 "ImageReleased": "GoBack.png",
                 "ImagePressed": "GoBack.png"
               },
@@ -1496,7 +1496,7 @@
               {
                 "Type": "ImageButtonStyle",
                 "X": 20,
-                "Y": 9,
+                "Y": 5,
                 "ImageReleased": "OFFCORE_72x72.png",
                 "ImagePressed": "OFFCORE_72x72.png"
               },
@@ -2040,7 +2040,7 @@
               {
                 "Type": "ImageButtonStyle",
                 "X": 20,
-                "Y": 5,
+                "Y": -5,
                 "ImageReleased": "GoBack.png",
                 "ImagePressed": "GoBack.png"
               },
@@ -2079,6 +2079,13 @@
               "Type": "ClickButtonTrigger"
             },
             "ButtonStyles": [
+              {
+                "Type": "ImageButtonStyle",
+                "X": 20,
+                "Y": 5,
+                "ImageReleased": "Log.png",
+                "ImagePressed": "Log.png"
+              },
               {
                 "Type": "TextButtonStyle",
                 "X": -20,
@@ -2174,7 +2181,7 @@
                 "Name": "serviceControl",
                 "X": -5,
                 "Width": 800,
-                "Height": 1235,
+                "Height": 953,
                 "CustomContainerDefinitionName": "ServiceContainer"
               }
             ]
@@ -2974,7 +2981,7 @@
               {
                 "Type": "ImageButtonStyle",
                 "X": 20,
-                "Y": 5,
+                "Y": -5,
                 "ImageReleased": "GoBack.png",
                 "ImagePressed": "GoBack.png"
               },
@@ -3181,7 +3188,7 @@
           {
             "Type": "FlexButton",
             "Name": "btnSetupClock",
-            "X": 404,
+            "X": 402,
             "Y": 404,
             "Width": 394,
             "Height": 72,
@@ -3189,6 +3196,13 @@
               "Type": "ClickButtonTrigger"
             },
             "ButtonStyles": [
+              {
+                "Type": "ImageButtonStyle",
+                "X": 20,
+                "Y": 5,
+                "ImageReleased": "Clock.png",
+                "ImagePressed": "Clock.png"
+              },
               {
                 "Type": "TextButtonStyle",
                 "X": -20,
@@ -3233,7 +3247,7 @@
           {
             "Type": "FlexButton",
             "Name": "btnBack",
-            "X": 5,
+            "X": 4,
             "Y": 404,
             "Width": 394,
             "Height": 72,
@@ -3243,7 +3257,7 @@
             "ButtonStyles": [
               {
                 "Type": "TextButtonStyle",
-                "X": -14,
+                "X": -20,
                 "Y": 20,
                 "TextId": "__SingleUse_IKXG",
                 "TextRotation": "0",
@@ -3261,7 +3275,7 @@
               {
                 "Type": "ImageButtonStyle",
                 "X": 20,
-                "Y": 5,
+                "Y": -5,
                 "ImageReleased": "GoBack.png",
                 "ImagePressed": "GoBack.png"
               },
@@ -3828,7 +3842,7 @@
               {
                 "Type": "ImageButtonStyle",
                 "X": 20,
-                "Y": 5,
+                "Y": -5,
                 "ImageReleased": "GoBack.png",
                 "ImagePressed": "GoBack.png"
               },
@@ -3857,26 +3871,12 @@
             ]
           },
           {
-            "Type": "TextArea",
-            "Name": "lblTitle",
-            "Y": 8,
-            "Width": 800,
-            "Height": 72,
-            "TextId": "__SingleUse_QJTD",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 128,
-              "Green": 128,
-              "Blue": 128
-            }
-          },
-          {
             "Type": "BoxWithBorder",
             "Name": "boxWithBorder1",
             "X": 5,
-            "Y": 80,
+            "Y": 4,
             "Width": 792,
-            "Height": 320,
+            "Height": 396,
             "Color": {
               "Red": 25,
               "Green": 25,
@@ -3893,9 +3893,9 @@
             "Type": "ScrollableContainer",
             "Name": "scrollableCont",
             "X": 4,
-            "Y": 80,
-            "Width": 792,
-            "Height": 317,
+            "Y": 6,
+            "Width": 793,
+            "Height": 391,
             "VerticalScrollEnabled": true,
             "ScrollbarsVisible": true,
             "ScrollbarsColor": {
@@ -3911,88 +3911,88 @@
                 "X": 2,
                 "Y": 2,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               },
               {
                 "Type": "CustomContainerInstance",
                 "Name": "scrollElment_1",
                 "X": 2,
-                "Y": 82,
+                "Y": 62,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               },
               {
                 "Type": "CustomContainerInstance",
                 "Name": "scrollElment_2",
                 "X": 4,
-                "Y": 160,
+                "Y": 122,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               },
               {
                 "Type": "CustomContainerInstance",
                 "Name": "scrollElment_3",
                 "X": 4,
-                "Y": 240,
+                "Y": 182,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               },
               {
                 "Type": "CustomContainerInstance",
                 "Name": "scrollElment_4",
                 "X": 2,
-                "Y": 320,
+                "Y": 242,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               },
               {
                 "Type": "CustomContainerInstance",
                 "Name": "scrollElment_5",
                 "X": 2,
-                "Y": 400,
+                "Y": 302,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               },
               {
                 "Type": "CustomContainerInstance",
                 "Name": "scrollElment_6",
                 "X": 2,
-                "Y": 480,
+                "Y": 362,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               },
               {
                 "Type": "CustomContainerInstance",
                 "Name": "scrollElment_7",
                 "X": 2,
-                "Y": 560,
+                "Y": 422,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               },
               {
                 "Type": "CustomContainerInstance",
                 "Name": "scrollElment_8",
                 "X": 2,
-                "Y": 640,
+                "Y": 482,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               },
               {
                 "Type": "CustomContainerInstance",
                 "Name": "scrollElment_9",
                 "X": 2,
-                "Y": 720,
+                "Y": 542,
                 "Width": 792,
-                "Height": 80,
+                "Height": 60,
                 "CustomContainerDefinitionName": "ScrollElment"
               }
             ]
@@ -4482,7 +4482,7 @@
               {
                 "Type": "ImageButtonStyle",
                 "X": 20,
-                "Y": 5,
+                "Y": -5,
                 "ImageReleased": "GoBack.png",
                 "ImagePressed": "GoBack.png"
               },
@@ -5668,13 +5668,13 @@
       {
         "Name": "ScrollElment",
         "Width": 792,
-        "Height": 80,
+        "Height": 60,
         "Components": [
           {
             "Type": "Box",
             "Name": "bacdround",
             "Width": 792,
-            "Height": 80,
+            "Height": 60,
             "Color": {
               "Red": 16,
               "Green": 16,
@@ -5686,7 +5686,7 @@
             "Name": "lblElement",
             "X": 4,
             "Width": 792,
-            "Height": 80,
+            "Height": 60,
             "TextId": "__SingleUse_GCT7",
             "TextRotation": "0",
             "Color": {
@@ -5704,7 +5704,7 @@
             "Type": "Line",
             "Name": "line4",
             "X": 21,
-            "Y": 73,
+            "Y": 54,
             "Width": 750,
             "Height": 7,
             "Color": {
@@ -5723,28 +5723,29 @@
       {
         "Name": "ServiceContainer",
         "Width": 800,
-        "Height": 1235,
+        "Height": 953,
         "Components": [
           {
             "Type": "TextArea",
             "Name": "lblKarunaUptimeTitle",
             "X": 32,
-            "Y": 306,
-            "Width": 295,
-            "Height": 44,
+            "Y": 274,
+            "Width": 207,
+            "Height": 37,
             "TextId": "__SingleUse_QYPN",
             "TextRotation": "0",
             "Color": {
               "Red": 200,
               "Green": 200,
               "Blue": 200
-            }
+            },
+            "AutoSize": true
           },
           {
             "Type": "TextArea",
             "Name": "lblKarunaUptime",
-            "X": 390,
-            "Y": 306,
+            "X": 478,
+            "Y": 274,
             "Width": 184,
             "Height": 44,
             "TextId": "__SingleUse_27WL",
@@ -5764,7 +5765,7 @@
             "Type": "TextArea",
             "Name": "lblDASClockTempTitle_0",
             "X": 32,
-            "Y": 459,
+            "Y": 416,
             "Width": 399,
             "Height": 44,
             "TextId": "__SingleUse_AR9N",
@@ -5778,8 +5779,8 @@
           {
             "Type": "TextArea",
             "Name": "lblClocktemp_0",
-            "X": 476,
-            "Y": 459,
+            "X": 478,
+            "Y": 416,
             "Width": 184,
             "Height": 44,
             "TextId": "__SingleUse_Q4R5",
@@ -5799,7 +5800,7 @@
             "Type": "TextArea",
             "Name": "lblDASClockCurrentTitle_0",
             "X": 32,
-            "Y": 504,
+            "Y": 460,
             "Width": 399,
             "Height": 44,
             "TextId": "__SingleUse_PNNL",
@@ -5813,8 +5814,8 @@
           {
             "Type": "TextArea",
             "Name": "lblClockLock_0",
-            "X": 476,
-            "Y": 504,
+            "X": 477,
+            "Y": 460,
             "Width": 184,
             "Height": 44,
             "TextId": "__SingleUse_8J5N",
@@ -5834,7 +5835,7 @@
             "Type": "TextArea",
             "Name": "lblDASClockCurrentTitle_1",
             "X": 32,
-            "Y": 592,
+            "Y": 548,
             "Width": 399,
             "Height": 44,
             "TextId": "__SingleUse_FST6",
@@ -5849,7 +5850,7 @@
             "Type": "TextArea",
             "Name": "lblClockLock_1",
             "X": 476,
-            "Y": 548,
+            "Y": 504,
             "Width": 184,
             "Height": 44,
             "TextId": "__SingleUse_8T1B",
@@ -5869,7 +5870,7 @@
             "Type": "TextArea",
             "Name": "lblDASClockCurrentTitle_2",
             "X": 32,
-            "Y": 548,
+            "Y": 504,
             "Width": 399,
             "Height": 44,
             "TextId": "__SingleUse_3OH6",
@@ -5883,8 +5884,8 @@
           {
             "Type": "TextArea",
             "Name": "lblClockLock_2",
-            "X": 476,
-            "Y": 592,
+            "X": 478,
+            "Y": 548,
             "Width": 184,
             "Height": 44,
             "TextId": "__SingleUse_9LCW",
@@ -5904,7 +5905,7 @@
             "Type": "TextArea",
             "Name": "lblKarunaTitle",
             "X": 15,
-            "Y": 212,
+            "Y": 193,
             "Width": 294,
             "Height": 44,
             "TextId": "__SingleUse_0LDD",
@@ -5919,7 +5920,7 @@
             "Type": "TextArea",
             "Name": "lblDASClockTitle",
             "X": 15,
-            "Y": 415,
+            "Y": 372,
             "Width": 294,
             "Height": 44,
             "TextId": "__SingleUse_YROX",
@@ -5934,7 +5935,7 @@
             "Type": "Line",
             "Name": "line4",
             "X": 45,
-            "Y": 691,
+            "Y": 636,
             "Width": 710,
             "Height": 15,
             "Color": {
@@ -5951,7 +5952,7 @@
             "Type": "Line",
             "Name": "line1",
             "X": 45,
-            "Y": 409,
+            "Y": 357,
             "Width": 710,
             "Height": 15,
             "Color": {
@@ -5984,23 +5985,24 @@
             "Name": "lblGUIFwVerTitle",
             "X": 32,
             "Y": 57,
-            "Width": 295,
-            "Height": 44,
+            "Width": 219,
+            "Height": 37,
             "TextId": "__SingleUse_1OG4",
             "TextRotation": "0",
             "Color": {
               "Red": 200,
               "Green": 200,
               "Blue": 200
-            }
+            },
+            "AutoSize": true
           },
           {
             "Type": "TextArea",
             "Name": "lblGUIFwVersion",
-            "X": 327,
+            "X": 271,
             "Y": 63,
-            "Width": 466,
-            "Height": 30,
+            "Width": 522,
+            "Height": 31,
             "TextId": "__SingleUse_Q6L7",
             "TextRotation": "0",
             "Color": {
@@ -6017,8 +6019,8 @@
           {
             "Type": "Line",
             "Name": "line0",
-            "X": 45,
-            "Y": 208,
+            "X": 46,
+            "Y": 178,
             "Width": 710,
             "Height": 15,
             "Color": {
@@ -6035,24 +6037,25 @@
             "Type": "TextArea",
             "Name": "lblKarunaFwVerTitle",
             "X": 32,
-            "Y": 260,
-            "Width": 306,
-            "Height": 44,
+            "Y": 237,
+            "Width": 219,
+            "Height": 37,
             "TextId": "__SingleUse_G1LA",
             "TextRotation": "0",
             "Color": {
               "Red": 200,
               "Green": 200,
               "Blue": 200
-            }
+            },
+            "AutoSize": true
           },
           {
             "Type": "TextArea",
             "Name": "lblKarunaFwVersion",
-            "X": 344,
-            "Y": 266,
-            "Width": 449,
-            "Height": 29,
+            "X": 271,
+            "Y": 241,
+            "Width": 522,
+            "Height": 31,
             "TextId": "__SingleUse_AT65",
             "TextRotation": "0",
             "Color": {
@@ -6069,9 +6072,9 @@
           {
             "Type": "FlexButton",
             "Name": "btnFactoryReset",
-            "X": 15,
-            "Y": 1051,
-            "Width": 772,
+            "X": 535,
+            "Y": 804,
+            "Width": 250,
             "Height": 72,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -6079,7 +6082,6 @@
             "ButtonStyles": [
               {
                 "Type": "TextButtonStyle",
-                "X": -17,
                 "Y": 20,
                 "TextId": "__SingleUse_GKKS",
                 "TextRotation": "0",
@@ -6096,7 +6098,7 @@
               },
               {
                 "Type": "BoxWithBorderButtonStyle",
-                "Width": 772,
+                "Width": 250,
                 "Height": 72,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 1,
@@ -6121,9 +6123,9 @@
           {
             "Type": "FlexButton",
             "Name": "btnSoftReset",
-            "X": 15,
-            "Y": 964,
-            "Width": 772,
+            "X": 275,
+            "Y": 804,
+            "Width": 250,
             "Height": 72,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -6131,7 +6133,6 @@
             "ButtonStyles": [
               {
                 "Type": "TextButtonStyle",
-                "X": -20,
                 "Y": 20,
                 "TextId": "__SingleUse_T381",
                 "TextRotation": "0",
@@ -6148,7 +6149,7 @@
               },
               {
                 "Type": "BoxWithBorderButtonStyle",
-                "Width": 772,
+                "Width": 250,
                 "Height": 72,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 1,
@@ -6174,7 +6175,7 @@
             "Type": "Line",
             "Name": "line2_1",
             "X": 45,
-            "Y": 1166,
+            "Y": 896,
             "Width": 710,
             "Height": 15,
             "Color": {
@@ -6191,7 +6192,7 @@
             "Type": "TextArea",
             "Name": "lblBootUpCountTitle",
             "X": 32,
-            "Y": 105,
+            "Y": 94,
             "Width": 205,
             "Height": 37,
             "TextId": "__SingleUse_3GMJ",
@@ -6206,8 +6207,8 @@
           {
             "Type": "TextArea",
             "Name": "lblBootupCnt",
-            "X": 387,
-            "Y": 105,
+            "X": 476,
+            "Y": 94,
             "Width": 174,
             "Height": 44,
             "TextId": "__SingleUse_KTHD",
@@ -6227,7 +6228,7 @@
             "Type": "TextArea",
             "Name": "lblBusUartErrorCntTitle",
             "X": 32,
-            "Y": 149,
+            "Y": 131,
             "Width": 285,
             "Height": 37,
             "TextId": "__SingleUse_W2OM",
@@ -6242,9 +6243,9 @@
           {
             "Type": "TextArea",
             "Name": "lblBusUartErrorCnt",
-            "X": 387,
-            "Y": 149,
-            "Width": 93,
+            "X": 476,
+            "Y": 131,
+            "Width": 174,
             "Height": 44,
             "TextId": "__SingleUse_3TGM",
             "TextRotation": "0",
@@ -6263,8 +6264,8 @@
             "Type": "TextArea",
             "Name": "lblKarunaUptimeCntTitle",
             "X": 32,
-            "Y": 350,
-            "Width": 327,
+            "Y": 313,
+            "Width": 237,
             "Height": 37,
             "TextId": "__SingleUse_KPYH",
             "TextRotation": "0",
@@ -6278,9 +6279,9 @@
           {
             "Type": "TextArea",
             "Name": "lblKarunaUartErrorCnt",
-            "X": 390,
-            "Y": 350,
-            "Width": 93,
+            "X": 478,
+            "Y": 313,
+            "Width": 182,
             "Height": 44,
             "TextId": "__SingleUse_9QB9",
             "TextRotation": "0",
@@ -6299,7 +6300,7 @@
             "Type": "Line",
             "Name": "line1_1",
             "X": 45,
-            "Y": 863,
+            "Y": 789,
             "Width": 710,
             "Height": 15,
             "Color": {
@@ -6316,7 +6317,7 @@
             "Type": "Line",
             "Name": "line1_1_1",
             "X": 45,
-            "Y": 1190,
+            "Y": 920,
             "Width": 710,
             "Height": 15,
             "Color": {
@@ -6333,8 +6334,8 @@
             "Type": "FlexButton",
             "Name": "btnDebug",
             "X": 15,
-            "Y": 878,
-            "Width": 772,
+            "Y": 804,
+            "Width": 250,
             "Height": 72,
             "ButtonTrigger": {
               "Type": "ClickButtonTrigger"
@@ -6342,7 +6343,6 @@
             "ButtonStyles": [
               {
                 "Type": "TextButtonStyle",
-                "X": -20,
                 "Y": 20,
                 "TextId": "__SingleUse_PVRW",
                 "TextRotation": "0",
@@ -6359,7 +6359,7 @@
               },
               {
                 "Type": "BoxWithBorderButtonStyle",
-                "Width": 772,
+                "Width": 250,
                 "Height": 72,
                 "LockToFlexButtonSize": true,
                 "BorderSize": 1,
@@ -6385,7 +6385,7 @@
             "Type": "TextArea",
             "Name": "lblDASClockSupplyVoltageTitle_1",
             "X": 32,
-            "Y": 716,
+            "Y": 651,
             "Width": 399,
             "Height": 44,
             "TextId": "__SingleUse_DSCM",
@@ -6400,7 +6400,7 @@
             "Type": "CustomContainerInstance",
             "Name": "OffsetUpDownContainer",
             "X": 476,
-            "Y": 713,
+            "Y": 648,
             "Width": 250,
             "Height": 50,
             "CustomContainerDefinitionName": "UpDownContainer"
@@ -6409,7 +6409,7 @@
             "Type": "TextArea",
             "Name": "lblDASClockSupplyVoltageTitle_1_1",
             "X": 32,
-            "Y": 763,
+            "Y": 698,
             "Width": 399,
             "Height": 44,
             "TextId": "__SingleUse_AFXB",
@@ -6423,8 +6423,8 @@
           {
             "Type": "TextArea",
             "Name": "lblTempOffsetRanges",
-            "X": 34,
-            "Y": 807,
+            "X": 35,
+            "Y": 742,
             "Width": 721,
             "Height": 36,
             "TextId": "__SingleUse_BMC7",
@@ -6443,8 +6443,8 @@
           {
             "Type": "TextArea",
             "Name": "lblDASClockCurrentTitle_Intext",
-            "X": 34,
-            "Y": 636,
+            "X": 32,
+            "Y": 592,
             "Width": 399,
             "Height": 44,
             "TextId": "__SingleUse_DLPA",
@@ -6459,7 +6459,7 @@
             "Type": "TextArea",
             "Name": "lblClockCurrent_Intext",
             "X": 478,
-            "Y": 636,
+            "Y": 592,
             "Width": 184,
             "Height": 44,
             "TextId": "__SingleUse_0PRL",
