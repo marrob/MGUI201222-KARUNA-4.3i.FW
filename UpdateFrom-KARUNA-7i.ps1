@@ -52,6 +52,15 @@ try {
 
   # *** Frontend ***  
 
+  #target
+  Copy-Item "$srcPath\TouchGFX\target\TouchGFXHAL.hpp" -Destination "$destPath\TouchGFX\target\TouchGFXHAL.hpp" -ErrorAction Stop 
+  Copy-Item "$srcPath\TouchGFX\target\TouchGFXHAL.cpp" -Destination "$destPath\TouchGFX\target\TouchGFXHAL.cpp" -ErrorAction Stop 
+  Copy-Item "$srcPath\TouchGFX\target\TouchGFXGPIO.cpp" -Destination "$destPath\TouchGFX\target\TouchGFXGPIO.cpp" -ErrorAction Stop 
+  Copy-Item "$srcPath\TouchGFX\target\STM32TouchController.hpp" -Destination "$destPath\TouchGFX\target\STM32TouchController.hpp" -ErrorAction Stop 
+  Copy-Item "$srcPath\TouchGFX\target\STM32TouchController.cpp" -Destination "$destPath\TouchGFX\target\STM32TouchController.cpp" -ErrorAction Stop 
+  Copy-Item "$srcPath\TouchGFX\target\CortexMMCUInstrumentation.hpp" -Destination "$destPath\TouchGFX\target\CortexMMCUInstrumentation.hpp" -ErrorAction Stop 
+  Copy-Item "$srcPath\TouchGFX\target\CortexMMCUInstrumentation.cpp" -Destination "$destPath\TouchGFX\target\CortexMMCUInstrumentation.cpp" -ErrorAction Stop 
+
   #clockscreen_screen
   Copy-Item "$srcPath\TouchGFX\gui\src\clockscreen_screen\ClockScreenView.cpp" -Destination "$destPath\TouchGFX\gui\src\clockscreen_screen\ClockScreenView.cpp" -ErrorAction Stop 
   Copy-Item "$srcPath\TouchGFX\gui\src\clockscreen_screen\ClockScreenPresenter.cpp" -Destination "$destPath\TouchGFX\gui\src\clockscreen_screen\ClockScreenPresenter.cpp" -ErrorAction Stop
@@ -149,9 +158,9 @@ catch {
   Write-Error -Message "Hopsz $_"
 
 }
-<# 
+
 pause 
-#>
+
 
 
 <# 
