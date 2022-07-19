@@ -62,75 +62,55 @@ uint32_t ServiceContainer::GuiItfGetKarunaUartErrorCnt(void)
 }
 
 /*** DasClock ***/
-//uint8_t ServiceContainer::GuiItfGetDasClockVersion(char** fw, char** uid, char** pcb)
-//{
-//	char _fw[25] = "220613_1243";
-//	char _uidI[25] = "0123456789ABCDEF0000003";
-//	char _pcb[25] = "V03";
-//	*fw = _fw;
-//	*uid = _uidI;
-//	*pcb = _pcb;
-//	return 0;
-//}
-//uint32_t ServiceContainer::GuiItfGetDasClockUptimeCnt()
-//{
-//	mUptimeCounterSim++;
-//	return mUptimeCounterSim;
-//}
-//float ServiceContainer::GuiItfGetDasClockMV341Temp()
-//{
-//	return 50.0;
-//}
-//float ServiceContainer::GuiItfGetDasClockMVOCX1Temp()
-//{
-//	return 55.1f;
-//}
-//float ServiceContainer::GuiItfGetDasClockMVOCX2Temp()
-//{
-//	return 60.2f;
-//}
-//float ServiceContainer::GuiItfGetDasClockMV341Current()
-//{
-//	return 550.0f;
-//}
-//float ServiceContainer::GuiItfGetDasClockMVOCX1Current()
-//{
-//	return 160.1f;
-//}
-//float ServiceContainer::GuiItfGetDasClockMVOCX2Current()
-//{
-//	return 160.2f;
-//}
-//float ServiceContainer::GuiItfGetDasClockMainVoltage()
-//{
-//	return 12.5f;
-//}
-//
-//uint32_t ServiceContainer::GuiItfGetDasClocUartErrorCnt(void)
-//{
-//	return 3;
-//}
-
-
-/*** Tri Clock ***/
-
-float ServiceContainer::GuiItfGetTempCh0(void)
+uint8_t ServiceContainer::GuiItfGetDasClockVersion(char** fw, char** uid, char** pcb)
 {
-	return 50.42;
-}
-
-uint8_t ServiceContainer::GuiItfGetDi0(void) {
-	return 1;
-}
-uint8_t ServiceContainer::GuiItfGetDi1(void) {
-	return 1;
-}
-uint8_t ServiceContainer::GuiItfGetDi2(void) {
-	return 1;
-}
-uint8_t ServiceContainer::GuiItfGetDi3(void) {
+	char _fw[25] = "220613_1243";
+	char _uidI[25] = "0123456789ABCDEF0000003";
+	char _pcb[25] = "V03";
+	*fw = _fw;
+	*uid = _uidI;
+	*pcb = _pcb;
 	return 0;
 }
+uint32_t ServiceContainer::GuiItfGetDasClockUptimeCnt()
+{
+	mUptimeCounterSim++;
+	return mUptimeCounterSim;
+}
+float ServiceContainer::GuiItfGetDasClockMV341Temp()
+{
+	return 50.0;
+}
+float ServiceContainer::GuiItfGetDasClockMVOCX1Temp()
+{
+	return 55.1f;
+}
+float ServiceContainer::GuiItfGetDasClockMVOCX2Temp()
+{
+	return 60.2f;
+}
+float ServiceContainer::GuiItfGetDasClockMV341Current()
+{
+	return 550.0f;
+}
+float ServiceContainer::GuiItfGetDasClockMVOCX1Current()
+{
+	return 160.1f;
+}
+float ServiceContainer::GuiItfGetDasClockMVOCX2Current()
+{
+	return 160.2f;
+}
+float ServiceContainer::GuiItfGetDasClockMainVoltage()
+{
+	return 12.5f;
+}
+
+uint32_t ServiceContainer::GuiItfGetDasClocUartErrorCnt(void)
+{
+	return 3;
+}
+
 
 uint32_t  ServiceContainer::GuiItfGetDasClockHeatedTemperature()
 {
@@ -158,25 +138,18 @@ extern "C"
 	uint32_t GuiItfGetKarunaUartErrorCnt(void);
 
 	/*** DasClock ***/
-	//uint8_t GuiItfGetDasClockVersion(char** fw, char** uid, char** pcb);
-	//uint32_t GuiItfGetDasClockUptimeCnt();
+	uint8_t GuiItfGetDasClockVersion(char** fw, char** uid, char** pcb);
+	uint32_t GuiItfGetDasClockUptimeCnt();
 
-	//float GuiItfGetDasClockMV341Temp();
-	//float GuiItfGetDasClockMVOCX1Temp();
-	//float GuiItfGetDasClockMVOCX2Temp();
-	//float GuiItfGetDasClockMV341Current();
-	//float GuiItfGetDasClockMVOCX1Current();
-	//float GuiItfGetDasClockMVOCX2Current();
-	//float GuiItfGetDasClockMainVoltage();
+	float GuiItfGetDasClockMV341Temp();
+	float GuiItfGetDasClockMVOCX1Temp();
+	float GuiItfGetDasClockMVOCX2Temp();
+	float GuiItfGetDasClockMV341Current();
+	float GuiItfGetDasClockMVOCX1Current();
+	float GuiItfGetDasClockMVOCX2Current();
+	float GuiItfGetDasClockMainVoltage();
 
-	//uint32_t GuiItfGetDasClocUartErrorCnt(void);
-
-	/*** Tri Clock ***/
-	float GuiItfGetTempCh0(void);
-	uint8_t GuiItfGetDi0(void);
-	uint8_t GuiItfGetDi1(void);
-	uint8_t GuiItfGetDi2(void);
-	uint8_t GuiItfGetDi3(void);
+	uint32_t GuiItfGetDasClocUartErrorCnt(void);
 
 	uint32_t GuiItfGetDasClockHeatedTemperature();
 	void GuiItfSetDasClockHeatedTemperature(uint32_t temp);
@@ -235,81 +208,50 @@ void ServiceContainer::RefreshServiceInfo()
 	uint32_t uptimeKaruna = GuiItfGetKarunaUptimeCnt();
 	Unicode::snprintf(lblKarunaUptimeBuffer, LBLBOOTUPCNT_SIZE, "%d", uptimeKaruna);
 	lblKarunaUptime.invalidate();
-	 
+
+	uint32_t karunaUartError = GuiItfGetKarunaUartErrorCnt();
+	Unicode::snprintf(lblKarunaUartErrorCntBuffer, LBLBOOTUPCNT_SIZE, "%d", karunaUartError);
+	lblKarunaUartErrorCnt.invalidate();
+
+#ifdef KARUNA_7i
 	/*** DasClock ***/
+	uint32_t uptimeDasClock = GuiItfGetDasClockUptimeCnt();
+	Unicode::snprintf(lblClockUptimeBuffer, LBLBOOTUPCNT_SIZE, "%d", uptimeDasClock);
+	lblClockUptime.invalidate();
 
-	//uint32_t dasClocUartError = GuiItfGetDasClocUartErrorCnt();
-	//Unicode::snprintf(DasClockErrorCntBuffer, LBLBOOTUPCNT_SIZE, "%d", dasClocUartError);
-	//lblKarunaUartErrorCnt.invalidate();	// 
-	//uint32_t uptimeDasClock = GuiItfGetDasClockUptimeCnt();
-	//Unicode::snprintf(lblClockUptimeBuffer, LBLBOOTUPCNT_SIZE, "%d", uptimeDasClock);
-	//lblClockUptime.invalidate();
-	//uint32_t karunaUartError = GuiItfGetKarunaUartErrorCnt();
-	//Unicode::snprintf(lblKarunaUartErrorCntBuffer, LBLBOOTUPCNT_SIZE, "%d", karunaUartError);
-	//DasClockErrorCnt.invalidate();
-	//float ocxo_1_temp = GuiItfGetDasClockMVOCX1Temp();
-	//Unicode::snprintfFloat(lblClocktemp_1Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", ocxo_1_temp);
-	//lblClocktemp_1.invalidate();
-	//float ocxo_2_temp = GuiItfGetDasClockMVOCX2Temp();
-	//Unicode::snprintfFloat(lblClocktemp_2Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", ocxo_2_temp);
-	//lblClocktemp_2.invalidate();
-	//float mv341_Current = GuiItfGetDasClockMV341Current();
-	//Unicode::snprintfFloat(lblClockCurrent_0Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", mv341_Current);
-	//lblClockCurrent_0.invalidate();
-	//float ocxo1_Current = GuiItfGetDasClockMVOCX1Current();
-	//Unicode::snprintfFloat(lblClockCurrent_1Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", ocxo1_Current);
-	//lblClockCurrent_1.invalidate();
-	//float ocxo_2_Current = GuiItfGetDasClockMVOCX2Current();
-	//Unicode::snprintfFloat(lblClockCurrent_2Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", ocxo_2_Current);
-	//lblClockCurrent_2.invalidate();
-	//float mainVoltage = GuiItfGetDasClockMainVoltage();
-	//Unicode::snprintfFloat(lblDASClockSupplyVoltageBuffer, LBLBOOTUPCNT_SIZE, "%0.2f", mainVoltage);
-	//lblDASClockSupplyVoltage.invalidate();
+	uint32_t dasClocUartError = GuiItfGetDasClocUartErrorCnt();
+	Unicode::snprintf(DasClockErrorCntBuffer, LBLBOOTUPCNT_SIZE, "%d", dasClocUartError);
+	DasClockErrorCnt.invalidate();
 
-
-	/*** TriClock ***/
-
-	//TEMP
-	 
-	float mv341_temp = GuiItfGetTempCh0();
+	float mv341_temp = GuiItfGetDasClockMV341Temp();
 	Unicode::snprintfFloat(lblClocktemp_0Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", mv341_temp);
 	lblClocktemp_0.invalidate();
 
-	//LOCK
+	float ocxo_1_temp = GuiItfGetDasClockMVOCX1Temp();
+	Unicode::snprintfFloat(lblClocktemp_1Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", ocxo_1_temp);
+	lblClocktemp_1.invalidate();
 
-	char lock[] = "Locked";
-	char unlock[] = "Unlocked";
+	float ocxo_2_temp = GuiItfGetDasClockMVOCX2Temp();
+	Unicode::snprintfFloat(lblClocktemp_2Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", ocxo_2_temp);
+	lblClocktemp_2.invalidate();
 
-	char* value0 = GuiItfGetDi0() ? lock : unlock; 
-	Unicode::UnicodeChar uni_value0[LBLCLOCKLOCK_0_SIZE];
-	Unicode::fromUTF8((const uint8_t*)value0, uni_value0, sizeof(uni_value0));
-	Unicode::snprintf(lblClockLock_0Buffer, LBLCLOCKLOCK_0_SIZE, "%s", uni_value0);
-	lblClockLock_0.invalidate();
+	float mv341_Current = GuiItfGetDasClockMV341Current();
+	Unicode::snprintfFloat(lblClockCurrent_0Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", mv341_Current);
+	lblClockCurrent_0.invalidate();
 
-	char* value1 = GuiItfGetDi1() ? lock : unlock;
-	Unicode::UnicodeChar uni_value1[LBLCLOCKLOCK_1_SIZE];
-	Unicode::fromUTF8((const uint8_t*)value1, uni_value1, sizeof(uni_value1));
-	Unicode::snprintf(lblClockLock_1Buffer, LBLCLOCKLOCK_1_SIZE, "%s", uni_value1);
-	lblClockLock_1.invalidate();
+	float ocxo1_Current = GuiItfGetDasClockMVOCX1Current();
+	Unicode::snprintfFloat(lblClockCurrent_1Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", ocxo1_Current);
+	lblClockCurrent_1.invalidate();
 
 
-	char* value2 = GuiItfGetDi2() ? lock : unlock;
-	Unicode::UnicodeChar uni_value2[LBLCLOCKLOCK_2_SIZE];
-	Unicode::fromUTF8((const uint8_t*)value2, uni_value2, sizeof(uni_value2));
-	Unicode::snprintf(lblClockLock_2Buffer, LBLCLOCKLOCK_2_SIZE, "%s", uni_value2);
-	lblClockLock_2.invalidate();
+	float ocxo_2_Current = GuiItfGetDasClockMVOCX2Current();
+	Unicode::snprintfFloat(lblClockCurrent_2Buffer, LBLBOOTUPCNT_SIZE, "%0.2f", ocxo_2_Current);
+	lblClockCurrent_2.invalidate();
 
-	//INT - EXT
-
-	char exter[] = "External";
-	char inter[] = "Internal";
-
-	char* valueIE = GuiItfGetDi3() ? exter : inter;
-	Unicode::UnicodeChar uni_valueIE[LBLCLOCKCURRENT_INTEXT_SIZE];
-	Unicode::fromUTF8((const uint8_t*)valueIE, uni_valueIE, sizeof(uni_valueIE));
-	Unicode::snprintf(lblClockCurrent_IntextBuffer, LBLCLOCKCURRENT_INTEXT_SIZE, "%s", uni_valueIE);
-	lblClockCurrent_Intext.invalidate();
-
+	float mainVoltage = GuiItfGetDasClockMainVoltage();
+	Unicode::snprintfFloat(lblDASClockSupplyVoltageBuffer, LBLBOOTUPCNT_SIZE, "%0.2f", mainVoltage);
+	lblDASClockSupplyVoltage.invalidate();
+#endif
 
 }
 
@@ -327,22 +269,23 @@ void ServiceContainer::GetVersionInfo()
 	Unicode::fromUTF8((const uint8_t*)uid, uni_uid, sizeof(uni_uid));
 	Unicode::fromUTF8((const uint8_t*)pcb, uni_pcb, sizeof(uni_pcb));
 	Unicode::snprintf(lblGUIFwVersionBuffer, LBLGUIFWVERSION_SIZE, "%s-%s-%s", uni_fw, uni_uid, uni_pcb);
+	lblGUIFwVersion.invalidate();
 
 	GuiItfGetKarunaVersion(&fw, &uid, &pcb);
 	Unicode::fromUTF8((const uint8_t*)fw, uni_fw, sizeof(uni_fw));
 	Unicode::fromUTF8((const uint8_t*)uid, uni_uid, sizeof(uni_uid));
 	Unicode::fromUTF8((const uint8_t*)pcb, uni_pcb, sizeof(uni_pcb));
 	Unicode::snprintf(lblKarunaFwVersionBuffer, LBLKARUNAFWVERSION_SIZE, "%s-%s-%s", uni_fw, uni_uid, uni_pcb);
+	lblKarunaFwVersion.invalidate();
 
-	/*GuiItfGetDasClockVersion(&fw, &uid, &pcb);
+#ifdef KARUNA_7i
+	GuiItfGetDasClockVersion(&fw, &uid, &pcb);
 	Unicode::fromUTF8((const uint8_t*)fw, uni_fw, sizeof(uni_fw));
 	Unicode::fromUTF8((const uint8_t*)uid, uni_uid, sizeof(uni_uid));
 	Unicode::fromUTF8((const uint8_t*)pcb, uni_pcb, sizeof(uni_pcb));
-	Unicode::snprintf(lblDASClockFwVersionBuffer, sizeof(LBLDASCLOCKFWVERSION_SIZE), "%s-%s-%s", uni_fw, uni_uid, uni_pcb);*/
-
-	lblGUIFwVersion.invalidate();
-	lblKarunaFwVersion.invalidate();
-	//lblDASClockFwVersion.invalidate();
+	Unicode::snprintf(lblDASClockFwVersionBuffer, LBLDASCLOCKFWVERSION_SIZE, "%s-%s-%s", uni_fw, uni_uid, uni_pcb);
+	lblDASClockFwVersion.invalidate();
+#endif
 }
 
 void ServiceContainer::OnClickFactoryReset()

@@ -76,7 +76,8 @@ void SaverScreenView::handleTickEvent()
 	if (mTickSaverCount % 10 == 0)
 	{
 		RequestCurrentTime();
-		RefreshCurrentAudio(); 
+		RefreshCurrentAudio();
+
 	}
 
 	if (mTickSaverCount % (60) == 0)

@@ -58,18 +58,11 @@ public:
   uint8_t GuitIfGetKarunaIsXlrSet(void);
   uint8_t GuiItfGetKarunaMclkOutIsEanbled(void);
 
-  /*** Das Clock ***/
-  //float GuiItfGetDasClockMV341Temp();
-  //uint8_t GuiItfGetDasClockStatusLock1();
-  //uint8_t GuiItfGetDasClockStatusLock2();
-  //uint8_t GuiItfGetDasClockIsExt();
-  
-  /*** Tri Clock ***/
-  float GuiItfGetTempCh0(void); 
-  uint8_t GuiItfGetDi0(void);
-  uint8_t GuiItfGetDi1(void);
-  uint8_t GuiItfGetDi2(void);
-  uint8_t GuiItfGetDi3(void); 
+  /*** Clock ***/
+  float GuiItfGetDasClockMV341Temp();
+  uint8_t GuiItfGetDasClockStatusLock1();
+  uint8_t GuiItfGetDasClockStatusLock2();
+  uint8_t GuiItfGetDasClockIsExt();
 
   /*** Time ***/
   void GuiItfGetRtc(time_t* dt);

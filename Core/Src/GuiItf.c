@@ -59,6 +59,11 @@ uint8_t GuiItfLoad(void)
     EepromU32Read(EEP_KARUNA_SAVED_FLAGS_ADDR, &value);
     Device.Karuna.SavedFlags = value;
 
+    if(Device.Karuna.SavedFlags & KRN_FLAG_MSTR_CLK_ON_I2S_EN)
+      Device.Karuna.DO |= KRN_DO_MCLK_I2S_EN;
+    else
+      Device.Karuna.DO &= ~KRN_DO_MCLK_I2S_EN;
+
     if(Device.Karuna.SavedFlags & KRN_FLAG_ALL_OUT_EN_AT_STARTUP)
       Device.Karuna.DO = KRN_DO_RCA_EN | KRN_DO_BNC_EN | KRN_DO_XLR_EN | KRN_DO_I2S_EN;
     else
@@ -67,11 +72,6 @@ uint8_t GuiItfLoad(void)
       Device.Karuna.DO = value;
     }
 
-    if(Device.Karuna.SavedFlags & KRN_FLAG_MSTR_CLK_ON_I2S_EN)
-      Device.Karuna.DO |= KRN_DO_MCLK_I2S_EN;
-    else
-      Device.Karuna.DO &= ~KRN_DO_MCLK_I2S_EN;
-
     /*** Log ***/
     EepromU32Read(EEP_LOG_LAST_PAGE_ADDR, &value);
     Device.Log.LastAddress = value;
@@ -79,7 +79,6 @@ uint8_t GuiItfLoad(void)
     /*** Screen Saver ***/
     EepromU32Read(EEP_SCREENSAVER_ENABLED_ADDR, &value);
     Device.Gui.ScreenSaverIsEnabled = value;
-
 
     /*** DasClock Heated Clock ***/
     EepromU32Read(EEP_DASCLOCK_HEATED_TEMP, &value);
@@ -120,10 +119,10 @@ uint8_t GuiItfSetDefault(void)
   /*** RTC ***/
   value = 0x01;
   EepromU32Write(EEP_RTC_IS_SET_ADDR, value);
-
+  //Factory Default: 01.06.2022 02:03
   struct tm tm_info;
-  tm_info.tm_year = 2022 - 1900; // 2022
-  tm_info.tm_mon = 6 - 1; //Junius
+  tm_info.tm_year = 2022 - 1900;
+  tm_info.tm_mon = 6 - 1;
   tm_info.tm_mday = 1;
   tm_info.tm_hour = 2;
   tm_info.tm_min = 3;
@@ -522,7 +521,7 @@ uint8_t GuitIfGetKarunaIsXlrSet()
 
 uint8_t GuiItfGetKarunaOutputsAllEnabledAfterStart(void)
 {
-  return Device.Karuna.SavedFlags & KRN_FLAG_ALL_OUT_EN_AT_STARTUP;
+  return (Device.Karuna.SavedFlags & KRN_FLAG_ALL_OUT_EN_AT_STARTUP) == KRN_FLAG_ALL_OUT_EN_AT_STARTUP;
 }
 
 void GuiItfSetKarunaOutputsAllEnabledAfterStart(uint8_t onoff)
@@ -562,7 +561,7 @@ void GuiItfSetKarunaMasterClkOnI2S(uint8_t onoff)
 
 uint8_t GuiItfGetKarunaMasterClkOnI2SIsEnabled(void)
 {
-  return Device.Karuna.SavedFlags & KRN_FLAG_MSTR_CLK_ON_I2S_EN;
+  return (Device.Karuna.SavedFlags & KRN_FLAG_MSTR_CLK_ON_I2S_EN) == KRN_FLAG_MSTR_CLK_ON_I2S_EN;
 }
 
 uint32_t GuiItfGetKarunaUartErrorCnt(void)
@@ -577,7 +576,7 @@ uint8_t GuiItfGetBacklightIsEnabled(void)
 
 uint8_t GuiItfGetKarunaMclkOutIsEanbled(void)
 {
-  return Device.Karuna.DI & KRN_DI_MCLK_OUT;
+  return (Device.Karuna.DI & KRN_DI_MCLK_OUT) == KRN_DI_MCLK_OUT;
 }
 
 /* DasClock -----------------------------------------------------------------*/
@@ -635,17 +634,17 @@ float GuiItfGetDasClockMainVoltage(void)
 
 uint8_t GuiItfGetDasClockStatusLock1(void)
 {
-  return Device.DasClock.DI & DAS_DI_LOCK1;
+  return (Device.DasClock.DI & DAS_DI_LOCK1)==DAS_DI_LOCK1;
 }
 
 uint8_t GuiItfGetDasClockStatusLock2(void)
 {
-  return Device.DasClock.DI & DAS_DI_LOCK2;
+  return (Device.DasClock.DI & DAS_DI_LOCK2)==DAS_DI_LOCK2;
 }
 
 uint8_t GuiItfGetDasClockIsExt(void)
 {
-  return Device.DasClock.DI & DAS_DI_EXT_IS_EN;
+  return (Device.DasClock.DI & DAS_DI_EXT_IS_EN) == DAS_DI_EXT_IS_EN;
 }
 
 uint32_t GuiItfGetDasClocUartErrorCnt(void)

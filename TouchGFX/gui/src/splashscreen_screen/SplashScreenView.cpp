@@ -2,7 +2,7 @@
 
 int splashCnt;
 int mSplashCount;
-int defWidth = 720;
+int defWidth = 920;
 
 SplashScreenView::SplashScreenView()
 {
@@ -27,7 +27,7 @@ void SplashScreenView::tearDownScreen()
 void SplashScreenView::handleTickEvent() 
 {
     splashCnt++;
-    if (splashCnt < 10)
+    if (splashCnt < 100)
     {
         return;
     }

@@ -32,7 +32,7 @@ public:
     uint32_t GuiItfGetKarunaUartErrorCnt();
 
     /*** DasClock ***/
-   /* uint8_t GuiItfGetDasClockVersion(char** fw, char** uid, char** pcb);
+    uint8_t GuiItfGetDasClockVersion(char** fw, char** uid, char** pcb);
     uint32_t GuiItfGetDasClockUptimeCnt();
 
     float GuiItfGetDasClockMV341Temp();
@@ -43,15 +43,7 @@ public:
     float GuiItfGetDasClockMVOCX2Current();
     float GuiItfGetDasClockMainVoltage();
 
-    uint32_t GuiItfGetDasClocUartErrorCnt(void);*/
-
-    /*** Tri Clock ***/
-    float GuiItfGetTempCh0(void);
-    uint8_t GuiItfGetDi0(void);
-    uint8_t GuiItfGetDi1(void);
-    uint8_t GuiItfGetDi2(void);
-    uint8_t GuiItfGetDi3(void);
-
+    uint32_t GuiItfGetDasClocUartErrorCnt(void);
     uint32_t GuiItfGetDasClockHeatedTemperature();
     void GuiItfSetDasClockHeatedTemperature(uint32_t temp);
 

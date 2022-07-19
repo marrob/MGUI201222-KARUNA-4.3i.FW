@@ -20,7 +20,7 @@ static uint8_t  SimIsBncON;
 /*** Karuna ***/
 uint8_t MainView::GuiItfGetKarunaStatus()
 {
-	return 0b01100001;
+	return 0b00000001;
 }
 
 void MainView::GuiItfSetKarunaHdmi(uint8_t onfoff)
@@ -69,41 +69,22 @@ uint8_t MainView::GuiItfGetKarunaMclkOutIsEanbled(void)
 }
 
 /*** Das Clock ***/
-//float MainView::GuiItfGetDasClockMV341Temp(void)
-//{
-//	return 32.8f;
-//}
-//uint8_t MainView::GuiItfGetDasClockStatusLock1(void)
-//{
-//	return true;
-//}
-//uint8_t MainView::GuiItfGetDasClockStatusLock2(void)
-//{
-//	return true;
-//}
-//uint8_t MainView::GuiItfGetDasClockIsExt(void)
-//{
-//	return false;
-//}
 
-/*** Tri Clock ***/
-
-float MainView::GuiItfGetTempCh0(void)
+float MainView::GuiItfGetDasClockMV341Temp(void)
 {
-	return 50.42;
+	return 52.8f;
 }
-
-uint8_t MainView::GuiItfGetDi0(void) {
-	return 1;
+uint8_t MainView::GuiItfGetDasClockStatusLock1(void)
+{
+	return true;
 }
-uint8_t MainView::GuiItfGetDi1(void) {
-	return 0;
+uint8_t MainView::GuiItfGetDasClockStatusLock2(void)
+{
+	return true;
 }
-uint8_t MainView::GuiItfGetDi2(void) {
-	return 0;
-}
-uint8_t MainView::GuiItfGetDi3(void) {
-	return 0;
+uint8_t MainView::GuiItfGetDasClockIsExt(void)
+{
+	return false;
 }
 
 /*** Time ***/
@@ -161,18 +142,10 @@ extern "C"
 	uint8_t GuiItfGetKarunaMclkOutIsEanbled(void);
 
 	/*** DasClock***/
-	/*float GuiItfGetDasClockMV341Temp();
+	float GuiItfGetDasClockMV341Temp();
 	uint8_t GuiItfGetDasClockStatusLock1();
 	uint8_t GuiItfGetDasClockStatusLock2();
-	uint8_t GuiItfGetDasClockIsExt();*/
-
-	/*** Tri Clock ***/
-	float GuiItfGetTempCh0(void);
-	uint8_t GuiItfGetDi0(void);
-	uint8_t GuiItfGetDi1(void);
-	uint8_t GuiItfGetDi2(void);
-	uint8_t GuiItfGetDi3(void); 
-
+	uint8_t GuiItfGetDasClockIsExt();
 
 	/*** Time ***/
 	void GuiItfGetRtc(time_t* dt);
@@ -461,33 +434,47 @@ void  MainView::SetDSDPCM(int p_AudiFormat)
 }
 
 void  MainView::SetBitDepth(int p_AudiFormat)
-{	 
-	int BitDepthVal = p_AudiFormat >> 5;
-	BitDepthVal = BitDepthVal & 0b00000011;
+{
+	bool isDsd = ToBinary(p_AudiFormat, 4);
 
-	switch (BitDepthVal)
-	{
-	case 0b00:
+	if (isDsd)
 	{
 		Unicode::strncpy(lblValueBitDepthBuffer, "1 bit", LBLVALUEBITDEPTH_SIZE);
-	}break;
-	case 0b01:
-	{
-		Unicode::strncpy(lblValueBitDepthBuffer, "16 bit", LBLVALUEBITDEPTH_SIZE);
-	}break;
-	case 0b10:
+	}
+	else
 	{
 		Unicode::strncpy(lblValueBitDepthBuffer, "24 bit", LBLVALUEBITDEPTH_SIZE);
-	}break;
-	case 0b11:
-	{
-		Unicode::strncpy(lblValueBitDepthBuffer, "32 bit", LBLVALUEBITDEPTH_SIZE);
-	}break;
-
-	default:
-		break;
 	}
-	 
+
+	//Ezt kell majd meghivni ha Lyuben kijavította a hibát de addig hazudunk
+
+		/*int BitDepth = p_AudiFormat >> 5;
+		BitDepth = BitDepth & 0b00000011;
+
+		switch (BitDepth)
+		{
+		case 0b00:
+		{
+			Unicode::strncpy(lblValueBitDepthBuffer, "1 bit", 6);
+		}break;
+		case 0b01:
+		{
+			Unicode::strncpy(lblValueBitDepthBuffer, "16 bit", 7);
+		}break;
+		case 0b10:
+		{
+			Unicode::strncpy(lblValueBitDepthBuffer, "24 bit", 7);
+		}break;
+		case 0b11:
+		{
+			Unicode::strncpy(lblValueBitDepthBuffer, "32 bit", 7);
+		}break;
+
+		default:
+			break;
+		}*/
+
+
 	lblValueBitDepth.invalidate();
 }
 
@@ -654,16 +641,14 @@ void MainView::RefreshKarunaAndClockInfo()
 	SetBitDepth(KRN_STAT);
 	SetFreq(KRN_STAT);
 
-	float temp = GuiItfGetTempCh0(); //GuiItfGetDasClockMV341Temp();
+	float temp = GuiItfGetDasClockMV341Temp();
 	SetTemp((int)temp);
 
 	//Refresh Clock Status
-	// Ez csak a referencben van
-	//mIs24Locked = mIs245Locked && mIs22Locked;
-	mIs24Locked = GuiItfGetDi0();
-	mIs22Locked = GuiItfGetDi1();
-	mIs245Locked = GuiItfGetDi2();
-	mIsIntExt = GuiItfGetDi3();
+	mIs22Locked = GuiItfGetDasClockStatusLock1();
+	mIs245Locked = GuiItfGetDasClockStatusLock2();
+	mIs24Locked = mIs245Locked && mIs22Locked;
+	mIsIntExt = GuiItfGetDasClockIsExt();
 
 	Refresh24Lock();
 	Refresh245Lock();
