@@ -1,12 +1,15 @@
-#include <gui/splashscreen_screen/SplashScreenView.hpp>
+ #include <gui/splashscreen_screen/SplashScreenView.hpp>
 
 int splashCnt;
 int mSplashCount;
-
-int defWidth = 720;
+int defWidth = 0;
 
 SplashScreenView::SplashScreenView()
 {
+#ifdef KARUNA_43i
+    defWidth = 720;
+#endif
+
 #ifdef KARUNA_7i
     defWidth = 920;
 #endif
